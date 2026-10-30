@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#050505" />
+    <meta name="description"
+        content="Tons e Cores transforma casas e histórias com reformas dignas para famílias que mais precisam." />
+    <title>Tons e Cores — novos começos</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+    <!-- TODO: trocar por URL absoluta quando o domínio do projeto for definido. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Tons e Cores" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="Tons e Cores — novos começos" />
+    <meta property="og:description"
+        content="Tons e Cores transforma casas e histórias com reformas dignas para famílias que mais precisam." />
+    <meta property="og:image" content="assets/og-tons-e-cores.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Tons e Cores — novos começos" />
+    <meta name="twitter:description"
+        content="Tons e Cores transforma casas e histórias com reformas dignas para famílias que mais precisam." />
+    <meta name="twitter:image" content="assets/og-tons-e-cores.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;display=swap" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="config.js" defer></script>
+    <script src="stories.js" defer></script>
+    <script src="hero.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header">
+        <a class="brand" href="#inicio" aria-label="Tons e Cores, início">
+            <img class="brand-logo" src="assets/logo-tons-e-cores-nav.webp" alt="Projeto Tons e Cores" width="256"
+                height="256" />
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation"
+            aria-label="Abrir menu">
+            <span class="menu-toggle-icon" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+            <span class="menu-toggle-label">Menu</span>
+        </button>
+        <nav id="navigation" class="navigation" aria-label="Navegação principal">
+            <a href="#inicio">Início</a><a href="#sobre">Sobre</a><a href="#indique">Indique uma casa</a><a
+                href="#doe">Doe</a><a href="#transparencia">Transparência</a>
+        </nav>
+    </header>
+    <main id="conteudo">
+        <section class="hero section-rule" id="inicio" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <div class="hero-copy-inner">
+                    <h1 class="hero-title" id="hero-title">
+                        <span class="hero-title-line"><span class="red">SOMOS</span> <span
+                                class="blue">TODOS</span></span>
+                        <span class="hero-title-line hero-title-line-soft">mais que um</span>
+                        <span class="hero-title-line hero-title-line-project"><span class="green">PROJETO</span></span>
+                    </h1>
+                    <div class="hero-actions">
+                        <a class="button button-blue hero-button" href="#sobre">Conheça <span
+                                aria-hidden="true">+</span></a>
+                        <span class="hero-palette" aria-hidden="true"><i class="blue-bg"></i><i class="red-bg"></i><i
+                                class="green-bg"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-stage" data-story-stage>
+                <div class="hero-stage-atmosphere" aria-hidden="true">
+                    <span class="hero-orb hero-orb-blue"></span>
+                    <span class="hero-orb hero-orb-red"></span>
+                    <span class="hero-orb hero-orb-green"></span>
+                </div>
+
+                <button class="hero-logo-trigger" type="button" data-logo-trigger aria-expanded="false"
+                    aria-controls="hero-stories"
+                    aria-label="Projeto Tons e Cores. Conhecer as histórias das famílias visitadas">
+                    <span class="hero-logo-lockup">
+                        <span class="hero-logo-word" data-logo-slot>
+                            <span class="hero-logo-fallback" aria-hidden="true">tons <span
+                                    class="hero-logo-amp">&amp;</span> cores</span>
+                        </span>
+                    </span>
+                    <span class="hero-logo-hint" aria-hidden="true">
+                        <span class="hero-hint-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M4 12s3-6 8-6 8 6 8 6-3 6-8 6-8-6-8-6Z" />
+                                <circle cx="12" cy="12" r="2.3" />
+                            </svg>
+                        </span>
+                        <span class="hero-hint-desktop" data-hero-hint-desktop>Passe o mouse para conhecer as
+                            histórias</span>
+                        <span class="hero-hint-touch" data-hero-hint-touch>Toque para conhecer as histórias</span>
+                    </span>
+                </button>
+
+                <section class="hero-stories" id="hero-stories" aria-label="Histórias das famílias visitadas"
+                    aria-hidden="true" inert>
+                    <header class="hero-stories-header">
+                        <p class="hero-stories-kicker"><span class="hero-pulse" aria-hidden="true"></span>Histórias
+                            das visitas</p>
+                        <button class="hero-stories-close" type="button" data-stories-close
+                            aria-label="Fechar galeria de histórias">
+                            Fechar
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M6 6l12 12M18 6L6 18" />
+                            </svg>
+                        </button>
+                    </header>
+
+                    <div class="hero-carousel" data-carousel>
+                        <div class="hero-carousel-track" data-carousel-track></div>
+                    </div>
+
+                    <footer class="hero-carousel-controls" data-carousel-controls hidden>
+                        <button class="hero-carousel-nav" type="button" data-carousel-prev
+                            aria-label="História anterior">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M15 5l-7 7 7 7" />
+                            </svg>
+                        </button>
+                        <div class="hero-carousel-dots" data-carousel-dots role="group"
+                            aria-label="Selecionar história"></div>
+                        <p class="hero-carousel-count" data-carousel-count aria-hidden="true"></p>
+                        <button class="hero-carousel-nav" type="button" data-carousel-next
+                            aria-label="Próxima história">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                        <button class="hero-carousel-pause" type="button" data-carousel-pause
+                            aria-label="Pausar troca automática de histórias">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M9 5v14M15 5v14" />
+                            </svg>
+                        </button>
+                    </footer>
+
+                    <p class="sr-only" data-carousel-status aria-live="polite"></p>
+                </section>
+            </div>
+        </section>
+
+        <section class="purpose section-rule content-width" id="sobre" aria-labelledby="purpose-title">
+            <div class="purpose-image image-frame"><img src="assets/arquitetura-casa-moderna.jpeg"
+                    alt="Esboço arquitetônico de uma casa moderna" loading="lazy" /></div>
+            <div class="purpose-copy">
+
+                <h2 id="purpose-title">Arquitetura<br /><span class="red">transforma</span><br /><span
+                        class="blue">vidas e inspira novos começos</span></h2>
+                <p>Acreditamos em você, que nos ajuda a construir casas e trazer dignidade para famílias em situação
+                    de
+                    extrema pobreza.</p>
+                <span class="accent-line" aria-hidden="true"></span>
+            </div>
+        </section>
+
+        <section class="process section-rule content-width" aria-labelledby="process-title">
+            <p class="eyebrow blue">Como funciona</p>
+            <h2 id="process-title">Do interesse<br />ao <span class="green">novo começo.</span></h2>
+            <ol class="steps">
+                <li><span class="step-icon blue-bg" aria-hidden="true">📝</span>
+                    <h3>Inscrição</h3>
+                </li>
+                <li><span class="step-icon green-bg" aria-hidden="true">📋</span>
+                    <h3>CSP</h3>
+                </li>
+                <li><span class="step-icon red-bg" aria-hidden="true">🎉</span>
+                    <h3>Contemplação</h3>
+                </li>
+                <li><span class="step-icon blue-bg" aria-hidden="true">📐</span>
+                    <h3>Levantamento e elaboração do projeto</h3>
+                </li>
+                <li><span class="step-icon green-bg" aria-hidden="true">🛠️</span>
+                    <h3>Execução do projeto</h3>
+                </li>
+                <li><span class="step-icon red-bg" aria-hidden="true">📈</span>
+                    <h3>Andamento do projeto</h3>
+                </li>
+                <li><span class="step-icon blue-bg" aria-hidden="true">🔑</span>
+                    <h3>Finalização e entrega</h3>
+                </li>
+            </ol>
+        </section>
+
+        <section class="indicate section-rule" id="indique" aria-labelledby="indicate-title">
+            <div class="indicate-image image-frame media-placeholder" role="img" aria-label="Imagem em breve">
+                <span class="media-placeholder-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                        <rect x="3" y="4" width="18" height="16" rx="2" />
+                        <circle cx="9" cy="10" r="2" />
+                        <path d="m4 18 5-5 4 4 2-2 5 5" />
+                    </svg>
+                </span>
+                <h3>Imagem em breve</h3>
+                <p>Este espaço está reservado para uma imagem real do projeto.</p>
+            </div>
+            <div class="indicate-copy">
+                <p class="eyebrow red">Indique uma casa</p>
+                <h2 id="indicate-title">Indique aqui e leve um novo aspecto de vida para <span class="blue">mais uma
+                        família</span></h2>
+                <a class="button button-blue" id="indication-link" href="#indique"
+                    aria-describedby="form-status">Indicar uma casa <span aria-hidden="true">+</span></a>
+                <p class="integration-note" id="form-status" role="status"></p>
+            </div>
+        </section>
+
+        <section class="donate section-rule content-width" id="doe" aria-labelledby="donate-title">
+            <div class="donate-copy">
+                <h2 id="donate-title">Seja nosso <span class="red">doador oficial!!</span></h2>
+                <button class="button button-red" id="pix-button" type="button" aria-describedby="pix-status">Gerar
+                    chave PIX!</button>
+                <a class="button button-red" id="pix-fallback" href="#doe" target="_blank"
+                    rel="noopener noreferrer" hidden>Gerar chave PIX!</a>
+                <div class="pix-panel" id="pix-panel" hidden>
+                    <p id="pix-value"></p><button class="button button-small" id="copy-pix" type="button">Copiar
+                        chave</button>
+                </div>
+                <p class="integration-note" id="pix-status" role="status" aria-live="polite"></p>
+            </div>
+            <div class="donate-image image-frame media-placeholder" role="img" aria-label="Imagem em breve">
+                <span class="media-placeholder-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                        <rect x="3" y="4" width="18" height="16" rx="2" />
+                        <circle cx="9" cy="10" r="2" />
+                        <path d="m4 18 5-5 4 4 2-2 5 5" />
+                    </svg>
+                </span>
+                <h3>Imagem em breve</h3>
+                <p>Este espaço está reservado para uma imagem real do projeto.</p>
+            </div>
+        </section>
+
+        <section class="stories section-rule content-width" aria-labelledby="stories-title">
+            <div class="stories-copy">
+                <p class="eyebrow blue">Histórias reais</p>
+                <h2 id="stories-title">Resultados<br />que <span class="green">inspiram.</span></h2>
+            </div>
+            <div class="stories-empty">
+                <span class="stories-empty-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                        <rect x="3" y="4" width="18" height="16" rx="2" />
+                        <circle cx="9" cy="10" r="2" />
+                        <path d="m4 18 5-5 4 4 2-2 5 5" />
+                    </svg>
+                </span>
+                <h3>Histórias em breve</h3>
+                <p>Este espaço está reservado para as famílias que autorizarem a publicação de suas histórias.</p>
+                <p class="stories-empty-note">Nenhuma imagem ou relato é publicado sem autorização.</p>
+            </div>
+        </section>
+
+        <section class="transparency section-rule content-width" id="transparencia"
+            aria-labelledby="transparency-title">
+            <div class="transparency-copy">
+                <p class="eyebrow green">Prestação de contas</p>
+                <h2 id="transparency-title">Portal de <span class="blue">transparência</span></h2>
+                <p>Aqui você acompanha em tempo real e com transparência todo o sistema administrativo de doações,
+                    para uma relação de total confiança entre o doador e o nosso projeto.</p>
+                <a class="button button-blue transparency-button" id="transparency-link" href="#transparencia"
+                    target="_blank" rel="noopener noreferrer" hidden>Acessar portal <span aria-hidden="true">+</span></a>
+                <p class="integration-note" id="transparency-status">O portal estará disponível em breve.</p>
+            </div>
+            <div class="transparency-image image-frame media-placeholder" role="img" aria-label="Imagem em breve">
+                <span class="media-placeholder-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                        <rect x="3" y="4" width="18" height="16" rx="2" />
+                        <circle cx="9" cy="10" r="2" />
+                        <path d="m4 18 5-5 4 4 2-2 5 5" />
+                    </svg>
+                </span>
+                <h3>Imagem em breve</h3>
+                <p>Este espaço está reservado para uma imagem real do projeto.</p>
+            </div>
+        </section>
+
+        <section class="contact section-rule content-width" aria-labelledby="contact-title">
+            <div class="contact-copy">
+                <p class="eyebrow green">Contato</p>
+                <h2 id="contact-title">Entre em contato <span class="blue">conosco</span></h2>
+                <p>E ajude a escrever novas histórias.</p>
+            </div>
+            <div class="contact-options" id="contact-options" aria-label="Canais de contato"></div>
+        </section>
+    </main>
+
+    <dialog class="story-dialog" id="story-dialog" aria-labelledby="story-dialog-title">
+        <div class="story-dialog-panel">
+            <button class="story-dialog-close" type="button" data-story-close aria-label="Fechar história">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 6l12 12M18 6L6 18" />
+                </svg>
+            </button>
+            <div class="story-dialog-media" data-story-media>
+                <img data-story-cover
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""
+                    hidden />
+                <div class="story-dialog-heading">
+                    <p class="eyebrow blue">História real</p>
+                    <h2 id="story-dialog-title"><span class="sr-only">História selecionada</span></h2>
+                    <p class="story-dialog-summary" id="story-dialog-summary" data-story-summary></p>
+                </div>
+            </div>
+            <div class="story-dialog-content" data-story-content tabindex="-1"></div>
+        </div>
+    </dialog>
+
+    <footer class="site-footer">
+        <div class="footer-brand"><span class="footer-wordmark" aria-label="Projeto Tons e Cores">tons
+                <span>&amp;</span> cores</span>
+            <p>© <span id="year"></span> Tons e Cores. Todos os direitos reservados.</p>
+        </div>
+        <nav aria-label="Links úteis"><a href="#transparencia">Transparência</a><span>Política de Privacidade
+                (pendente)</span><span>Termos de Uso (pendente)</span></nav>
+    </footer>
+</body>
+
+</html>
